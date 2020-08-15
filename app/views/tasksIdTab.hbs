@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Passport with Sequelize</title>
+</head>
+ 
+<body>
+    {{>menu}}
+
+    <h2>Табельный учет</h2>    
+    <table border = "1">
+    <tr>
+        <td rowspan="3">Работник</td>
+        <td rowspan="3">Месяц <br></td>
+        <td rowspan="3">Всего часов<br></td>
+        <td colspan="16">Количество отработанного времени<br></td>
+    </tr>
+    <tr>
+    {{#each daysF.days}}
+        <td>{{this}}</td>
+    {{/each}}
+    </tr>
+    <tr>
+    {{#each daysS}}
+        <td>{{this}}</td>
+    {{/each}}
+    </tr>
+    {{#each tasks}}
+    <tr>
+        <th rowspan="3">{{inc @index}} </th> 
+        <th rowspan="3"><a href="/tasks/{{id_task}}">{{task_title}}</a></th> 
+        <th rowspan="3">{{setPaymentType payment_type}}</th>
+        <th rowspan="3">{{rate}}</th>
+    </tr>
+    {{/each}}
+    </table>
+    
+    {{>footer}}
+</body>
+ 
+</html>

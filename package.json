@@ -1,0 +1,33 @@
+{
+  "name": "first_app",
+  "version": "0.0.0",
+  "description": "Registration",
+  "main": "server.js",
+  "author": "Lipova",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.1",
+    "connect-flash": "^0.1.1",
+    "connect-multiparty": "^2.1.0",
+    "dateformat": "^3.0.3",
+    "dotenv": "^5.0.1",
+    "exceljs": "^1.4.8",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "foreach-promise": "0.0.1",
+    "hbs": "^4.0.1",
+    "mysql": "^2.15.0",
+    "mysql-bluebird": "0.0.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-roles": "^1.0.1",
+    "path": "^0.12.7",
+    "squel": "^5.12.1",
+    "sync": "^0.2.5",
+    "xlsx-populate": "^1.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
+  }
+}

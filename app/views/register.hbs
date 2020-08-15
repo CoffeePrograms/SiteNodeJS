@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    {{> menu}}
+     
+    <h1>{{title}}</h1>
+    {{#greeting userName}}
+        <p>Логин: {{userName}}</p>
+        <p>Пароль: {{userPass}}</p>
+        <p>Роль: {{userRole}}</p>
+    {{else}}
+        <p>Hi, foreign!</p>
+    {{/greeting}}
+    
+    {{> footer}}
+</body>
+<html>
